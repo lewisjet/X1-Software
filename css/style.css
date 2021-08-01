@@ -59,6 +59,15 @@ footer{
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+li.footer{
+    float: left; margin-right: 0.5rem;
+}
+
+/* Alignment */
+.v-center{
+    vertical-align: center;
 }

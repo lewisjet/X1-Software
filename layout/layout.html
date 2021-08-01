@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>X1 Software</title>
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/bootstrap.css"/>
@@ -13,7 +14,7 @@
             <div class="container">
                 <a class="navbar-brand override-font" href="../">
                     <!--suppress CheckImageSize -->
-                    <img src="/assets/logo.png" alt="X1 Software's logo" width="50" height="50" class="d-inline-block">
+                    <img src="/assets/logo.png" alt="X1 Software's logo" width="50" height="50">
                     X1 Software
                 </a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,14 +26,20 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" href="../">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="https://x1.games/">Games</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-light dropdown-toggle" href="https://x1.games/" id="GamesDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Games</a>
+                            <ul class="dropdown-menu" aria-labelledby="GamesDrop">
+                                <li><a class="dropdown-item" href="https://x1.games/">Home</a></li>
+                                <li><a class="dropdown-item" href="https://x1.games/Games/">Games</a></li>
+                                <li><a class="dropdown-item" href="https://x1.games/Vlog/">Vlog</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="../Software/">Software</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="../Contracting/">Contracting</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-light dropdown-toggle" href="https://x1.games/" id="CDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contracting</a>
+                            <ul class="dropdown-menu" aria-labelledby="CDrop">
+                                <li><a class="dropdown-item" href=../Contracting/>About</a></li>
+                                <li><a class="dropdown-item" href=../Portfolio/>Portfolio</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="../Contact/">Contact</a>
@@ -45,12 +52,36 @@
             </div>
         </nav>
     </header>
-    <br>
-    <footer class="navy x-ter border-top border-info light-blue-text" style="height: 3rem">
-        <div id="footerContent"></div>
+    <main>
+
+    </main>
+    <footer class="navy x-ter border-top border-info light-blue-text" style="height: 3rem;">
+        <div id="footerContent" class="float-start align-middle"></div>
         <script>
             document.getElementById("footerContent").innerHTML = `&copy;${new Date().getFullYear()} - X1 Software`
         </script>
+        <ul class="float-end" style="list-style: none; ">
+            <li class="footer">
+                <a href="https://discord.gg/N8xUbKR5qj">
+                    <img src="../node_modules/bootstrap-icons/icons/discord.svg" alt="Join our discord server!" width="32" height="32">
+                </a>
+            </li>
+            <li class="footer">
+                <a href="https://www.reddit.com/r/X1gaming/">
+                    <img src="../node_modules/bootstrap-icons/icons/reddit.svg" alt="Join our subreddit!" width="32" height="32">
+                </a>
+            </li>
+            <li class="footer">
+                <a href="https://www.facebook.com/gaming/X1GamesOfficial">
+                    <img src="../node_modules/bootstrap-icons/icons/facebook.svg" alt="Follow us on Facebook!" width="32" height="32">
+                </a>
+            </li>
+            <li class="footer">
+                <a href="https://twitter.com/TheRealX1Games">
+                    <img src="../node_modules/bootstrap-icons/icons/twitter.svg" alt="Follow us on Twitter!" width="32" height="32">
+                </a>
+            </li>
+        </ul>
     </footer>
     <script src="../js/bootstrap.bundle.js"></script>
 </body>
