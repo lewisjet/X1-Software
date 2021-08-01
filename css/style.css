@@ -2,13 +2,12 @@
 body{
     font-family: Verdana, serif;
     background-color: #EEEEEE;
-    font-size: x-large;
 }
 
 /* Global For Mobile */
 @media (min-width: 768px){
     body{
-        font-size: xx-large;
+
     }
 }
 
@@ -44,9 +43,6 @@ body{
 }
 
 /* Navbar */
-.override-font{
-    font-family: Verdana, serif;
-}
 .x-ter{
     width: 100vw;
     padding-left: 1rem;
@@ -62,12 +58,26 @@ footer{
     padding-top: 0.5rem;
     padding-right: 2rem;
     padding-left: 2rem;
+    font-size: small;
 }
 li.footer{
     float: left; margin-right: 0.5rem;
 }
 
 /* Alignment */
+.t-center{
+    text-align: center;
+}
 .v-center{
     vertical-align: center;
+}
+
+/* Font Size */
+.xxx-large{
+    font-size: xxx-large;
+}
+
+/* Main Style */
+main.main{
+    font-size: xx-large;
 }
