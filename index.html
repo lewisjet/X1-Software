@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X1 Software</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+    <header class="navy x-ter">
+        <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-info">
+            <a class="navbar-brand override-font" href="index.html">
+                <!--suppress CheckImageSize -->
+                <img src="/assets/logo.png" alt="X1 Software's logo" width="50" height="50" class="d-inline-block">
+                X1 Software
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://x1.games/">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="">Contracting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="">Revision Cards</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <footer class="navy x-ter border-top border-info light-blue-text" style="height: 3rem">
+        <div id="footerContent"></div>
+        <script>
+            document.getElementById("footerContent").innerHTML = `&copy;${new Date().getFullYear()} - X1 Software`
+        </script>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

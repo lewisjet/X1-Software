@@ -1,0 +1,64 @@
+/* Global */
+body{
+    font-family: Verdana, serif;
+    background-color: #EEEEEE;
+    font-size: x-large;
+}
+
+/* Global For Mobile */
+@media (min-width: 768px){
+    body{
+        font-size: xx-large;
+    }
+}
+
+/* Colours */
+.navy{
+    background-color: #334257;
+}
+.blue{
+    background-color: #476072;
+}
+.light-blue{
+    background-color: #548CA8;
+}
+.gray{
+    background-color: #EEEEEE;
+}
+
+/* Font Colours */
+.white-text{
+    color: white;
+}
+.navy-text{
+    color: #334257;
+}
+.blue-text{
+    color: #476072;
+}
+.light-blue-text{
+    color: #548CA8;
+}
+.gray-text{
+    color: #EEEEEE;
+}
+
+/* Navbar */
+.override-font{
+    font-family: Verdana, serif;
+}
+.x-ter{
+    width: 100vw;
+    padding-left: 1rem;
+}
+
+/* Footer */
+footer{
+    float: bottom;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
